@@ -4,7 +4,8 @@ import { useNavigate } from 'react-router-dom';
 import { heroData } from '../data/portfolioData';
 import { useTypewriter } from '../hooks/useTypewriter';
 import { ArrowRight, Download, Atom, Terminal, FileCode, Flame, Sparkles } from 'lucide-react';
-// import { WhatsAppImage2 } from "../../src/assets/images/WhatsAppImage2.jpeg"
+import  photo  from '../assets/images/WhatsAppImage2.jpg';
+
 
 export const HeroSection: React.FC = () => {
   const navigate = useNavigate();
@@ -127,8 +128,7 @@ export const HeroSection: React.FC = () => {
           <div className="relative w-full max-w-[420px] h-[480px] bg-[#111827]/40 backdrop-blur-xl border border-white/10 rounded-[40px] shadow-2xl p-4 overflow-hidden">
             <div className="w-full h-full bg-slate-800 rounded-[30px] flex items-center justify-center relative overflow-hidden group">
               <img
-                // src={heroData.avatarUrl}
-                src="src\assets\images\WhatsAppImage2.jpg"
+                src={photo}
                 alt="Muhammad Tayyab Senior Developer"
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"

@@ -3,6 +3,8 @@ import { motion } from 'motion/react';
 import { useNavigate } from 'react-router-dom';
 import { aboutData, heroData } from '../data/portfolioData';
 import { Download, Mail, CheckCircle2, Award, Briefcase, Users } from 'lucide-react';
+import  photo  from '../assets/images/WhatsAppImage2.jpg';
+
 
 export const AboutSection: React.FC = () => {
   const navigate = useNavigate();
@@ -39,7 +41,7 @@ export const AboutSection: React.FC = () => {
             <div className="p-4 bg-[#111827]/60 backdrop-blur-xl border border-white/10 rounded-[32px] shadow-2xl overflow-hidden relative group">
               <div className="h-96 rounded-[24px] overflow-hidden relative">
                 <img
-                  src="src\assets\images\WhatsAppImage2.jpg"
+                  src={photo}
                   alt="Developer working on React code"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"

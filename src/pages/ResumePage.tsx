@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { resumeData, heroData, projectsData, skillsData } from '../data/portfolioData';
 import { Printer, Download, ArrowLeft, Mail, Phone, MapPin, Globe, Github, Linkedin, Briefcase, GraduationCap, Award, Languages, Code2, CheckCircle2 } from 'lucide-react';
+import  photo  from '../assets/images/WhatsAppImage2.jpg';
 
 export const ResumePage: React.FC = () => {
   const handlePrint = () => {
@@ -57,7 +58,7 @@ export const ResumePage: React.FC = () => {
           <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6 border-b border-slate-800 dark:border-slate-800 light:border-slate-200 pb-8 mb-8">
             <div className="w-28 h-28 rounded-2xl overflow-hidden border-2 border-sky-400 shrink-0 shadow-xl">
               <img
-                src="src\assets\images\WhatsAppImage2.jpg"
+                src={photo}
                 alt={resumeData.profile.name}
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover"
