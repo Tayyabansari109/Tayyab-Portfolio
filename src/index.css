@@ -1,0 +1,234 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-main: #0B1120;
+    --card-bg: #111827;
+    --text-primary: #FFFFFF;
+    --color-primary: #38BDF8;
+    --color-secondary: #7C3AED;
+  }
+
+  html.light {
+    --bg-main: #F8FAFC;
+    --card-bg: #FFFFFF;
+    --text-primary: #0F172A;
+    --color-primary: #0284C7;
+    --color-secondary: #6D28D9;
+  }
+
+  body {
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+}
+
+/* Light Theme Global Overrides */
+html.light body {
+  background-color: #F8FAFC !important;
+  color: #0F172A !important;
+}
+
+html.light nav {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  border-color: #E2E8F0 !important;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05) !important;
+}
+
+html.light section {
+  background-color: #F8FAFC !important;
+  border-color: #E2E8F0 !important;
+}
+
+html.light section:nth-of-type(even) {
+  background-color: #F1F5F9 !important;
+}
+
+html.light h1:not(.text-transparent):not(footer *),
+html.light h2:not(.text-transparent):not(footer *),
+html.light h3:not(.text-transparent):not(footer *),
+html.light h4:not(.text-transparent):not(footer *) {
+  color: #0F172A !important;
+}
+
+html.light .bg-\[\#0B1120\] {
+  background-color: #F8FAFC !important;
+}
+
+html.light section.bg-\[\#070B14\] {
+  background-color: #F8FAFC !important;
+}
+
+html.light .bg-\[\#111827\] {
+  background-color: #FFFFFF !important;
+  border-color: #E2E8F0 !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+html.light .bg-\[\#111827\]\/60,
+html.light .bg-\[\#111827\]\/50,
+html.light .bg-\[\#111827\]\/80,
+html.light .bg-\[\#111827\]\/90,
+html.light .bg-\[\#111827\]\/95 {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  border-color: #E2E8F0 !important;
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.06) !important;
+}
+
+html.light .bg-\[\#0B1120\]\/80,
+html.light .bg-\[\#0B1120\]\/90,
+html.light .bg-\[\#0B1120\]\/60 {
+  background-color: rgba(248, 250, 252, 0.95) !important;
+  border-color: #E2E8F0 !important;
+}
+
+html.light .border-white\/10,
+html.light .border-white\/5,
+html.light .border-slate-800 {
+  border-color: #E2E8F0 !important;
+}
+
+html.light .text-white {
+  color: #0F172A !important;
+}
+
+html.light .text-slate-100 {
+  color: #0F172A !important;
+}
+
+html.light .text-slate-200 {
+  color: #1E293B !important;
+}
+
+html.light .text-slate-300 {
+  color: #334155 !important;
+}
+
+html.light .text-slate-400 {
+  color: #64748B !important;
+}
+
+html.light .bg-white\/5 {
+  background-color: #F1F5F9 !important;
+  border-color: #CBD5E1 !important;
+  color: #0F172A !important;
+}
+
+html.light .bg-white\/10 {
+  background-color: #E2E8F0 !important;
+  color: #0F172A !important;
+}
+
+html.light input,
+html.light textarea {
+  background-color: #FFFFFF !important;
+  color: #0F172A !important;
+  border-color: #CBD5E1 !important;
+}
+
+html.light input::placeholder,
+html.light textarea::placeholder {
+  color: #94A3B8 !important;
+}
+
+/* Footer in Light Mode maintains high-contrast stylish dark navy look */
+html.light footer,
+html.light footer.bg-\[\#070B14\] {
+  background-color: #070B14 !important;
+  color: #CBD5E1 !important;
+}
+
+html.light footer h1,
+html.light footer h2,
+html.light footer h3,
+html.light footer h4,
+html.light footer h4.text-white,
+html.light footer *.text-white,
+html.light footer span.text-white,
+html.light footer div.text-white,
+html.light footer p.text-white {
+  color: #FFFFFF !important;
+}
+
+html.light footer .text-slate-300,
+html.light footer span.text-slate-300,
+html.light footer button.text-slate-300,
+html.light footer a.text-slate-300 {
+  color: #CBD5E1 !important;
+}
+
+html.light footer .text-slate-400,
+html.light footer span.text-slate-400,
+html.light footer p.text-slate-400 {
+  color: #94A3B8 !important;
+}
+
+html.light footer .border-white\/10 {
+  border-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+html.light footer .bg-white\/5 {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  color: #E2E8F0 !important;
+  border-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+html.light footer button:hover,
+html.light footer a:hover {
+  color: #38BDF8 !important;
+}
+
+/* Toast message text stays white in both themes (toast has dark background) */
+html.light .toast-message {
+  color: #FFFFFF !important;
+}
+
+/* Custom Utilities & Animations */
+@keyframes spinSlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spinSlow 12s linear infinite;
+}
+
+/* Print Rules for Resume Page */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  .print\:hidden {
+    display: none !important;
+  }
+
+  .print\:border-none {
+    border: none !important;
+  }
+
+  .print\:shadow-none {
+    box-shadow: none !important;
+  }
+
+  .print\:p-0 {
+    padding: 0 !important;
+  }
+
+  .print\:bg-white {
+    background-color: #ffffff !important;
+  }
+
+  .print\:text-slate-900 {
+    color: #0f172a !important;
+  }
+}
