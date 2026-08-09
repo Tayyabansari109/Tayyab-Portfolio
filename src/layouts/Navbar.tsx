@@ -51,7 +51,7 @@ export const Navbar: React.FC = () => {
 
   return (
     <nav
-      className={`sticky top-0 z-50 w-full transition-all duration-300 ${
+      className={`w-full transition-all duration-300 ${
         isScrolled
           ? 'bg-[#0B1120]/90 light:bg-white/95 backdrop-blur-md shadow-2xl border-b border-white/10'
           : 'bg-[#0B1120]/80 light:bg-white/80 backdrop-blur-md border-b border-white/10'

@@ -89,7 +89,7 @@ export const HeroSection: React.FC = () => {
           </div>
 
           {/* Quick Stats Banner */}
-          <div className="grid grid-cols-3 gap-4 pt-6 border-t border-white/10 mt-2">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-6 border-t border-white/10 mt-2">
             <div>
               <div className="text-2xl sm:text-3xl font-extrabold text-[#38BDF8] font-mono">
                 {heroData.stats.experience}

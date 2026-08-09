@@ -5,7 +5,7 @@ import { WhatsAppIcon } from '../components/common/WhatsAppIcon';
 
 export const TopBar: React.FC = () => {
   return (
-    <div className="w-full bg-[#070b14] text-slate-400 border-b border-white/5 py-2.5 px-4 sm:px-8 text-xs font-medium z-50">
+    <div className="w-full bg-[#070b14] text-slate-400 border-b border-white/5 py-2.5 px-4 sm:px-8 text-xs font-medium">
       <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
         {/* Left Side: Contact Details */}
         <div className="flex flex-wrap items-center justify-center sm:justify-start gap-4 sm:gap-6">
@@ -34,8 +34,8 @@ export const TopBar: React.FC = () => {
           </a>
         </div>
 
-        {/* Right Side: Social Media Icons */}
-        <div className="flex items-center gap-4">
+        {/* Right Side: Social Media Icons (hidden on mobile, shown on tablet md+ and laptop) */}
+        <div className="hidden md:flex items-center gap-4">
           <span className="text-slate-500 hidden md:inline text-[11px] font-mono tracking-wider uppercase">Socials:</span>
           <a
             href={topBarData.whatsapp}

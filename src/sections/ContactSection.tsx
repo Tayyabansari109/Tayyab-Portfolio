@@ -234,7 +234,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onShowToast, sel
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    placeholder="e.g. Muhammad Tayyab"
+                    placeholder="e.g. John Doe"
                     className={`w-full px-4 py-3.5 rounded-xl bg-[#0B1120] text-white border ${
                       errors.name ? 'border-rose-500 focus:ring-rose-500' : 'border-white/10 focus:border-[#38BDF8]'
                     } focus:outline-none focus:ring-2 focus:ring-[#38BDF8]/20 text-sm transition-all placeholder:text-slate-500`}
@@ -256,7 +256,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onShowToast, sel
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
-                    placeholder="e.g. ta759777@gmail.com"
+                    placeholder="e.g. john123@gmail.com"
                     className={`w-full px-4 py-3.5 rounded-xl bg-[#0B1120] text-white border ${
                       errors.email ? 'border-rose-500 focus:ring-rose-500' : 'border-white/10 focus:border-[#38BDF8]'
                     } focus:outline-none focus:ring-2 focus:ring-[#38BDF8]/20 text-sm transition-all placeholder:text-slate-500`}
