@@ -47,8 +47,9 @@ function AppContent() {
       <LoadingScreen isLoading={isLoading} />
       <Toast notifications={notifications} onDismiss={dismissToast} />
 
+      <TopBar />
+
       <header className="sticky top-0 z-50 w-full">
-        <TopBar />
         <Navbar />
       </header>
 
