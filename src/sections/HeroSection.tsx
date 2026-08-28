@@ -45,15 +45,15 @@ export const HeroSection: React.FC = () => {
 
           {/* Name & Animated Title */}
           <div className="space-y-2">
-            <h1 className="text-4xl sm:text-6xl xl:text-7xl font-extrabold leading-[1.1] tracking-tight text-white font-sans">
+            <h1 className="text-4xl sm:text-6xl xl:text-7xl font-extrabold leading-[1.1] tracking-tight text-white font-sans break-words">
               Muhammad{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#38BDF8] to-[#7C3AED]">
                 Tayyab
               </span>
             </h1>
 
-            <div className="text-2xl sm:text-3xl font-medium text-slate-300 font-mono h-12 flex items-center">
-              <span className="bg-gradient-to-r from-[#38BDF8] via-purple-300 to-[#7C3AED] bg-clip-text text-transparent">
+            <div className="text-xl sm:text-3xl font-medium text-slate-300 font-mono min-h-12 flex items-center min-w-0">
+              <span className="bg-gradient-to-r from-[#38BDF8] via-purple-300 to-[#7C3AED] bg-clip-text text-transparent break-words min-w-0">
                 {typewriterText}
               </span>
               <span className="w-0.5 h-7 bg-[#38BDF8] ml-1 animate-pulse" />
@@ -71,7 +71,7 @@ export const HeroSection: React.FC = () => {
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.96 }}
               onClick={scrollToContact}
-              className="px-8 py-3.5 bg-gradient-to-r from-[#38BDF8] to-[#7C3AED] rounded-xl font-bold text-white hover:scale-105 shadow-2xl shadow-[#38BDF8]/20 flex items-center gap-2.5 transition-all cursor-pointer"
+              className="w-full sm:w-auto px-8 py-3.5 bg-gradient-to-r from-[#38BDF8] to-[#7C3AED] rounded-xl font-bold text-white hover:scale-105 shadow-2xl shadow-[#38BDF8]/20 flex items-center justify-center gap-2.5 transition-all cursor-pointer"
             >
               <span>Hire Me Now</span>
               <ArrowRight className="w-4 h-4" />
@@ -81,7 +81,7 @@ export const HeroSection: React.FC = () => {
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.96 }}
               onClick={() => navigate('/resume')}
-              className="px-8 py-3.5 bg-white/5 border border-white/10 rounded-xl font-bold text-white hover:bg-white/10 flex items-center gap-2.5 transition-all cursor-pointer"
+              className="w-full sm:w-auto px-8 py-3.5 bg-white/5 border border-white/10 rounded-xl font-bold text-white hover:bg-white/10 flex items-center justify-center gap-2.5 transition-all cursor-pointer"
             >
               {/* <Download className="w-4 h-4 text-[#38BDF8]" /> */}
               <span>View Resume</span>
@@ -125,7 +125,7 @@ export const HeroSection: React.FC = () => {
           className="relative flex justify-center lg:justify-end"
         >
           {/* Glassmorphic Card for Image */}
-          <div className="relative w-full max-w-[420px] h-[480px] bg-[#111827]/40 backdrop-blur-xl border border-white/10 rounded-[40px] shadow-2xl p-4 overflow-hidden">
+          <div className="relative w-full max-w-[420px] h-[400px] sm:h-[480px] bg-[#111827]/40 backdrop-blur-xl border border-white/10 rounded-[32px] sm:rounded-[40px] shadow-2xl p-3 sm:p-4 overflow-hidden">
             <div className="w-full h-full bg-slate-800 rounded-[30px] flex items-center justify-center relative overflow-hidden group">
               <img
                 src={photo}
@@ -157,7 +157,7 @@ export const HeroSection: React.FC = () => {
           </div>
 
           {/* Stats Overlay */}
-          <div className="absolute -bottom-6 left-4 sm:left-8 bg-[#111827] border border-white/10 p-5 rounded-2xl shadow-2xl flex items-center gap-6 z-20">
+          <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 sm:left-8 sm:translate-x-0 bg-[#111827] border border-white/10 p-4 sm:p-5 rounded-2xl shadow-2xl flex items-center gap-4 sm:gap-6 z-20 whitespace-nowrap">
             <div className="text-center">
               <div className="text-[#38BDF8] text-2xl font-bold font-mono">8 Mo</div>
               <div className="text-[10px] text-slate-400 uppercase font-black tracking-wider">Experience</div>

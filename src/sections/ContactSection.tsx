@@ -164,7 +164,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onShowToast, sel
                         WHATSAPP CHAT
                       </div>
                       <a href={topBarData.whatsapp} target="_blank" rel="noopener noreferrer" className="text-base font-semibold text-white hover:text-emerald-400 transition-colors">
-                        +92 328-1166513
+                        {topBarData.phone}
                       </a>
                     </div>
                     <a

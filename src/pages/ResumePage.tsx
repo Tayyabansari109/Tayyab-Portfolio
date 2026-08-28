@@ -77,7 +77,7 @@ export const ResumePage: React.FC = () => {
               <div className="flex flex-wrap items-center justify-center sm:justify-start gap-4 mt-4 text-xs font-medium text-slate-300 dark:text-slate-300 light:text-slate-700">
                 <span className="flex items-center gap-1.5">
                   <Mail className="w-3.5 h-3.5 text-sky-400" />
-                  {resumeData.profile.email}
+                  <span className="break-all">{resumeData.profile.email}</span>
                 </span>
                 <span className="flex items-center gap-1.5">
                   <Phone className="w-3.5 h-3.5 text-sky-400" />
@@ -87,11 +87,11 @@ export const ResumePage: React.FC = () => {
                   <MapPin className="w-3.5 h-3.5 text-sky-400" />
                   {resumeData.profile.location}
                 </span>
-                <a href={resumeData.profile.github} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 hover:text-sky-400 transition-colors">
+                <a href={resumeData.profile.github} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 hover:text-sky-400 transition-colors break-all">
                   <Github className="w-3.5 h-3.5 text-sky-400" />
                   github.com/Tayyabansari109
                 </a>
-                <a href={resumeData.profile.linkedin} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 hover:text-sky-400 transition-colors">
+                <a href={resumeData.profile.linkedin} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 hover:text-sky-400 transition-colors break-all">
                   <Linkedin className="w-3.5 h-3.5 text-sky-400" />
                   linkedin.com/in/tayyab-ansari-9a2557390
                 </a>

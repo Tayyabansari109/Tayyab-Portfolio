@@ -69,7 +69,7 @@ export const Navbar: React.FC = () => {
             alt="Tayyab Ansari Logo"
             className="w-10 h-10 rounded-full object-cover group-hover:scale-110 transition-transform shadow-lg shadow-[#38BDF8]/20"
           />
-          <div className="text-2xl font-black tracking-tighter text-slate-100 dark:text-white light:text-slate-900">
+          <div className="text-xl sm:text-2xl font-black tracking-tighter text-slate-100 dark:text-white light:text-slate-900 whitespace-nowrap">
             <span className="text-[#38BDF8]">TAYYAB</span>.DEV
           </div>
         </Link>

@@ -55,7 +55,7 @@ export const AboutSection: React.FC = () => {
             </div>
 
             {/* Metrics Grid */}
-            <div className="grid grid-cols-3 gap-3">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
               <div className="p-4 rounded-2xl bg-[#111827]/60 backdrop-blur-xl border border-white/10 text-center shadow-lg">
                 <Award className="w-5 h-5 text-[#38BDF8] mx-auto mb-1" />
                 <div className="text-lg font-bold text-white font-mono">8 Mo</div>

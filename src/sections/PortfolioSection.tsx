@@ -135,7 +135,7 @@ export const PortfolioSection: React.FC = () => {
                     </div>
 
                     {/* Action Buttons */}
-                    <div className="grid grid-cols-2 gap-3 pt-3 border-t border-white/10">
+                    <div className={`grid gap-3 pt-3 border-t border-white/10 ${project.githubUrl ? 'grid-cols-2' : 'grid-cols-1'}`}>
                       <a
                         href={project.liveUrl}
                         target="_blank"
@@ -146,15 +146,17 @@ export const PortfolioSection: React.FC = () => {
                         <span>Live Demo</span>
                       </a>
 
-                      <a
-                        href={project.githubUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="py-2.5 px-3 rounded-xl bg-white/5 hover:bg-white/10 text-slate-200 border border-white/10 font-bold text-xs flex items-center justify-center gap-1.5 transition-all cursor-pointer"
-                      >
-                        <Github className="w-3.5 h-3.5" />
-                        <span>GitHub</span>
-                      </a>
+                      {project.githubUrl && (
+                        <a
+                          href={project.githubUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="py-2.5 px-3 rounded-xl bg-white/5 hover:bg-white/10 text-slate-200 border border-white/10 font-bold text-xs flex items-center justify-center gap-1.5 transition-all cursor-pointer"
+                        >
+                          <Github className="w-3.5 h-3.5" />
+                          <span>GitHub</span>
+                        </a>
+                      )}
                     </div>
                   </div>
                 </div>
@@ -212,15 +214,17 @@ export const PortfolioSection: React.FC = () => {
                 <span>Open Live Demo</span>
               </a>
 
-              <a
-                href={selectedProject.githubUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex-1 py-3 rounded-xl bg-slate-800 text-slate-200 font-semibold text-sm flex items-center justify-center gap-2 hover:bg-slate-700 border border-slate-700 transition-colors"
-              >
-                <Github className="w-4 h-4" />
-                <span>Source Code</span>
-              </a>
+              {selectedProject.githubUrl && (
+                <a
+                  href={selectedProject.githubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 py-3 rounded-xl bg-slate-800 text-slate-200 font-semibold text-sm flex items-center justify-center gap-2 hover:bg-slate-700 border border-slate-700 transition-colors"
+                >
+                  <Github className="w-4 h-4" />
+                  <span>Source Code</span>
+                </a>
+              )}
             </div>
           </div>
         )}

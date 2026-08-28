@@ -8,11 +8,12 @@ import {
   EducationItem,
   CertificationItem,
 } from '../types';
+import hiscoGroupImage from '../assets/images/hisco-group.jpg';
 
 export const topBarData: TopBarInfo = {
   email: 'ta759777@gmail.com',
-  phone: '+92 328-1166513',
-  whatsapp: 'https://wa.me/923281166513',
+  phone: '+92 303-9535604',
+  whatsapp: 'https://wa.me/923039535604',
   github: 'https://github.com/Tayyabansari109',
   linkedin: 'https://www.linkedin.com/in/tayyab-ansari-9a2557390/',
   facebook: 'https://www.facebook.com/share/1M9T8KMHsQ/',
@@ -138,15 +139,13 @@ export const servicesData: Service[] = [
 export const projectsData: Project[] = [
   {
     id: 'p1',
-    name: 'E-Commerce Platform',
+    name: 'Hisco Group Website',
     category: 'React',
     description:
-      'Full-featured electronic commerce platform with product filtering, dynamic shopping cart, checkout workflow, and dark mode.',
-    image:
-      'https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&w=800&q=80',
+      'A real-world, fully responsive business website successfully developed and delivered for Hisco Group.',
+    image: hiscoGroupImage,
     technologies: ['React.js', 'Bootstrap 5', 'Context API', 'Firebase'],
-    liveUrl: 'https://example.com/ecommerce-demo',
-    githubUrl: 'https://github.com/alexrivera-dev/ecommerce-react-app',
+    liveUrl: 'https://hiscogroup.com',
     featured: true,
   },
   {
@@ -384,8 +383,8 @@ export const resumeData = {
     name: 'Muhammad Tayyab',
     title: 'Senior Frontend React Developer',
     email: 'ta759777@gmail.com',
-    phone: '+92 328-1166513',
-    whatsapp: 'https://wa.me/923281166513',
+    phone: '+92 303-9535604',
+    whatsapp: 'https://wa.me/923039535604',
     location: 'Pakistan / Remote',
     github: 'https://github.com/Tayyabansari109',
     linkedin: 'https://www.linkedin.com/in/tayyab-ansari-9a2557390/',

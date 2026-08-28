@@ -14,7 +14,7 @@ export const TopBar: React.FC = () => {
             className="flex items-center gap-2 hover:text-[#38BDF8] transition-colors"
           >
             <Mail className="w-3.5 h-3.5 text-[#38BDF8]" />
-            <span>{topBarData.email}</span>
+            <span className="break-all">{topBarData.email}</span>
           </a>
           <a
             href={`tel:${topBarData.phone}`}
