@@ -150,15 +150,13 @@ export const projectsData: Project[] = [
   },
   {
     id: 'p2',
-    name: 'Restaurant Website',
-    category: 'Bootstrap',
+    name: 'Umrah Wala Website',
+    category: 'React',
     description:
-      'Interactive culinary portal featuring online food menu reservation, customer reviews, photo gallery, and Google Maps location.',
-    image:
-      'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80',
-    technologies: ['HTML5', 'CSS3', 'Bootstrap 5', 'JavaScript'],
-    liveUrl: 'https://example.com/restaurant-demo',
-    githubUrl: 'https://github.com/alexrivera-dev/gourmet-restaurant-site',
+      'A modern Umrah travel website helping pilgrims plan visas, flights, accommodation, transport, Ziyarat, and curated Umrah packages.',
+    image: 'https://umrahwala.info/images/kaaba.jpg',
+    technologies: ['React.js', 'JavaScript', 'Responsive Design', 'Firebase'],
+    liveUrl: 'https://umrahwala.info',
   },
   {
     id: 'p3',
@@ -381,7 +379,7 @@ export const skillsData: Skill[] = [
 export const resumeData = {
   profile: {
     name: 'Muhammad Tayyab',
-    title: 'Senior Frontend React Developer',
+    title: 'Frontend React Developer',
     email: 'ta759777@gmail.com',
     phone: '+92 303-9535604',
     whatsapp: 'https://wa.me/923039535604',
@@ -390,48 +388,21 @@ export const resumeData = {
     linkedin: 'https://www.linkedin.com/in/tayyab-ansari-9a2557390/',
     website: 'https://alexrivera-portfolio.dev',
     summary:
-      'Results-driven Frontend React Developer with 8 months of hands-on experience specializing in React.js, modern JavaScript, Bootstrap 5, and Firebase. Proven track record of building accessible, high-performance web applications and design systems.',
+      'I am a dedicated Frontend React Developer with 8 months of hands-on experience turning complex ideas into sleek, scalable, and responsive web applications. My passion lies at the intersection of aesthetic design and engineering precision. Specializing in React.js, modern JavaScript (ES6+), Bootstrap 5, Tailwind CSS, and Firebase, I build web experiences optimized for performance, accessibility, and user engagement across mobile, tablet, laptop, and desktop devices.',
   },
   experience: [
     {
       id: 'e1',
-      role: 'Senior Frontend Developer',
-      company: 'TechVision Solutions Inc.',
-      period: '2023 - Present',
-      location: 'San Francisco, CA',
+      role: 'Frontend React Developer',
+      company: 'Star Tech Solution',
+      period: '8 Months',
+      location: 'Pakistan / Remote',
       description:
-        'Leading frontend development for enterprise client dashboards and React applications.',
+        'Developed responsive and modern web applications using React.js, JavaScript, Bootstrap, Tailwind CSS, and Firebase.',
       achievements: [
-        'Architected modern React components reducing page load latency by 35%.',
-        'Spearheaded transition to Bootstrap 5 and Tailwind design system across 12 client products.',
-        'Mentored junior developers and conducted code reviews enforcing strict TypeScript standards.',
-      ],
-    },
-    {
-      id: 'e2',
-      role: 'React.js Web Engineer',
-      company: 'Nexus Digital Agency',
-      period: '2021 - 2023',
-      location: 'Austin, TX (Remote)',
-      description:
-        'Engineered responsive web applications, e-commerce frontends, and Firebase integrations.',
-      achievements: [
-        'Integrated Firebase Firestore and Auth for 20+ web apps servicing over 100k active users.',
-        'Designed pixel-perfect glassmorphism cards and smooth CSS3 animations for brand showcases.',
-        'Collaborated directly with UI/UX designers to translate Figma frames into semantic JSX code.',
-      ],
-    },
-    {
-      id: 'e3',
-      role: 'Junior Web Developer',
-      company: 'PixelCraft Studio',
-      period: '2019 - 2021',
-      location: 'Seattle, WA',
-      description:
-        'Developed cross-browser compatible landing pages using HTML5, CSS3, Bootstrap, and JavaScript.',
-      achievements: [
-        'Converted legacy non-responsive web pages into mobile-first Bootstrap 5 layouts.',
-        'Maintained Git repositories, optimized image assets, and improved lighthouse SEO scores to 95+.',
+        'Built reusable React components and responsive layouts for mobile, tablet, and desktop screens.',
+        'Integrated Firebase Authentication, Firestore, and Cloud Hosting into web applications.',
+        'Used Git and GitHub workflows to maintain clean, collaborative, and deployable codebases.',
       ],
     },
   ] as ExperienceItem[],
