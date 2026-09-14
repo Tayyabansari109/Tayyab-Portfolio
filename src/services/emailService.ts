@@ -1,10 +1,12 @@
 import emailjs from '@emailjs/browser';
 import { ContactFormData } from '../types';
 
-// EmailJS credentials are loaded from .env.local (VITE_* variables)
-const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID || '';
-const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || '';
-const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY || '';
+// EmailJS public configuration can be overridden with VITE_* variables.
+// These values are safe for browser use and keep the form working on Vercel
+// when the deployment environment has not been configured yet.
+const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID || 'service_co19svm';
+const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || 'template_dxa0a9m';
+const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY || 'CCMA_Y6bYwxh_MXW7';
 
 // The recipient email address (your Gmail)
 const TO_EMAIL = 'ta759777@gmail.com';
