@@ -160,28 +160,26 @@ export const projectsData: Project[] = [
   },
   {
     id: 'p3',
-    name: 'Gym & Fitness Hub',
+    name: 'Rehman Collections Website',
     category: 'React',
     description:
-      'Modern health and fitness web app with workout schedule planner, membership calculator, trainer profiles, and class booking.',
+      'A modern website showcasing the Rehman Collections brand and its online presence.',
     image:
-      'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=80',
-    technologies: ['React.js', 'Framer Motion', 'Tailwind', 'JavaScript'],
-    liveUrl: 'https://example.com/gym-demo',
-    githubUrl: 'https://github.com/alexrivera-dev/powerfit-gym-app',
+      'https://images.unsplash.com/photo-1632226390535-2f02c1a93541?auto=format&fit=crop&crop=faces&w=2200&h=1100&q=90',
+    technologies: [],
+    liveUrl: 'https://rehmancollections.com',
     featured: true,
   },
   {
     id: 'p4',
-    name: 'Hospital & Healthcare Portal',
+    name: 'BuyNext Online Shopping',
     category: 'React',
     description:
-      'Telemedicine and medical center platform with online doctor appointment scheduling, patient records portal, and emergency contact.',
+      'An online shopping platform featuring products from local sellers and China, with nationwide delivery and buyer protection.',
     image:
-      'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=800&q=80',
-    technologies: ['React.js', 'Firebase Auth', 'Bootstrap 5', 'CSS3'],
-    liveUrl: 'https://example.com/hospital-demo',
-    githubUrl: 'https://github.com/alexrivera-dev/careplus-hospital-portal',
+      'https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=900&q=80',
+    technologies: ['E-commerce', 'Online Shopping', 'Product Catalog'],
+    liveUrl: 'https://buy-next.online',
   },
   {
     id: 'p5',
